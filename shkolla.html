@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Image Sprites</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0;
+        }
+
+        li {
+            width: 64px;
+            height: 64px;
+            background-image: url("sprites.png");
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+        .home {
+            background-position: 0 0;
+        }
+
+        .search {
+            background-position: -64px 0;
+        }
+
+        .settings {
+            background-position: -128px 0;
+        }
+
+        .user {
+            background-position: -192px 0;
+        }
+
+        li:hover {
+            transform: scale(1.2);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Image Sprites</h1>
+
+    <p>Shembull i përdorimit të ikonave me CSS Sprites:</p>
+
+    <ul>
+        <li class="home" title="Ballina"></li>
+        <li class="search" title="Kërko"></li>
+        <li class="settings" title="Cilësimet"></li>
+        <li class="user" title="Përdoruesi"></li>
+    </ul>
+
+</body>
+</html>
